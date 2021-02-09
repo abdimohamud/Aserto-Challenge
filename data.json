@@ -1,0 +1,549 @@
+{
+    "results":  [
+      {
+        "id":  "011a88bc-7df9-4d92-ba1f-2ff319e101e1",
+        "enabled":  true,
+        "display_name":  "Karin Lamb",
+        "email":  "karinl@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Karin%20Lamb.jpg",
+        "identities":  {
+          "+1-20-5555-9834":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|011a88bc-7df9-4d92-ba1f-2ff319e101e1":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=karin lamb":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "karinl":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "karinl@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "crm-strategy"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "CRM Strategy",
+          "manager":  "2cfdb538-a03d-44b1-a0f2-b7ef32b713a7",
+          "title":  "CRM Consultant"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:44:57Z",
+          "updated_at":  "2020-12-23T00:44:57Z"
+        }
+      },
+      {
+        "id":  "01d1e01e-bf53-419a-9762-17270b1a7328",
+        "enabled":  true,
+        "display_name":  "Nuno Farinha",
+        "email":  "nunof@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Nuno%20Farinha.jpg",
+        "identities":  {
+          "+1-214-555-1812":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|01d1e01e-bf53-419a-9762-17270b1a7328":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=nuno farinha":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "nunof":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "nunof@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "sales"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Sales",
+          "manager":  "4d339518-1c4e-46dd-8024-829f555b1562",
+          "title":  "Salesperson"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:48:10Z",
+          "updated_at":  "2020-12-23T00:48:10Z"
+        }
+      },
+      {
+        "id":  "026dc3e3-4406-43c7-9a3e-cba432b0447b",
+        "enabled":  true,
+        "display_name":  "Karen Berg",
+        "email":  "karenb@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Karen%20Berg.jpg",
+        "identities":  {
+          "+1-425-555-0174":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|026dc3e3-4406-43c7-9a3e-cba432b0447b":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=karen berg":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "karenb":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "karenb@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "senior-management"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Senior Management",
+          "manager":  "81066423-effe-4a10-aa35-4aa10ae0510c",
+          "title":  "Sr. Account Manager"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:48:11Z",
+          "updated_at":  "2020-12-23T00:48:11Z"
+        }
+      },
+      {
+        "id":  "02abd93d-71f3-4ca7-bba1-929dee6bc5d9",
+        "enabled":  true,
+        "display_name":  "Dominik Paiha",
+        "email":  "dominip@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Dominik%20Paiha.jpg",
+        "identities":  {
+          "+1-212-555-2538":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|02abd93d-71f3-4ca7-bba1-929dee6bc5d9":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=dominik paiha":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "dominip":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "dominip@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "sales"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Sales",
+          "manager":  "7e28daa4-228f-46fc-b8f1-f35d7e4ed03e",
+          "title":  "Salesperson"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:48:08Z",
+          "updated_at":  "2020-12-23T00:48:08Z"
+        }
+      },
+      {
+        "id":  "043eef25-992d-4761-b948-1ea1977b4160",
+        "enabled":  true,
+        "display_name":  "Annelie Zubar",
+        "email":  "anneliz@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Annelie%20Zubar.jpg",
+        "identities":  {
+          "+1-2555-4845":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "anneliz":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "anneliz@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          },
+          "auth0|043eef25-992d-4761-b948-1ea1977b4160":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=annelie zubar":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "sales"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Sales",
+          "manager":  "7e28daa4-228f-46fc-b8f1-f35d7e4ed03e",
+          "title":  "Salesperson"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:48:19Z",
+          "updated_at":  "2020-12-23T00:48:19Z"
+        }
+      },
+      {
+        "id":  "05809581-4d1d-4c6b-a895-12e5e129bc04",
+        "enabled":  true,
+        "display_name":  "Tina Makovec",
+        "email":  "tinam@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Tina%20Makovec.jpg",
+        "identities":  {
+          "+1-804-555-2465":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|05809581-4d1d-4c6b-a895-12e5e129bc04":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=tina makovec":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "tinam":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "tinam@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "sales-engagement-management"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Sales Engagement Management",
+          "manager":  "2bfaa552-d9a5-41e9-a6c3-5be62b4433c8",
+          "title":  "Salesperson"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:47:51Z",
+          "updated_at":  "2020-12-23T00:47:51Z"
+        }
+      },
+      {
+        "id":  "061929ec-ccb5-407a-ad08-95d26d8cef92",
+        "enabled":  true,
+        "display_name":  "John Evans",
+        "email":  "johnev@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/John%20Evans.jpg",
+        "identities":  {
+          "+1-206-555-8951":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|061929ec-ccb5-407a-ad08-95d26d8cef92":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=john evans":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "johnev":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "johnev@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "marketing"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Marketing",
+          "manager":  "7139b430-f5e4-4dc2-8b1f-1921b54f42a5",
+          "title":  "Marketing Specialist"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:48:57Z",
+          "updated_at":  "2020-12-23T00:48:57Z"
+        }
+      },
+      {
+        "id":  "06ae3442-d45c-4434-bcbc-8fffc563159c",
+        "enabled":  true,
+        "display_name":  "Sunil Uppal",
+        "email":  "sunilu@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Sunil%20Uppal.jpg",
+        "identities":  {
+          "+1-206-555-2416":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|06ae3442-d45c-4434-bcbc-8fffc563159c":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=sunil uppal":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "sunilu":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "sunilu@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "marketing"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Marketing",
+          "manager":  "7139b430-f5e4-4dc2-8b1f-1921b54f42a5",
+          "title":  "Public Relations Specialist"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:48:48Z",
+          "updated_at":  "2020-12-23T00:48:48Z"
+        }
+      },
+      {
+        "id":  "081d9d81-2445-430c-b1fe-520ecd3ecf00",
+        "enabled":  true,
+        "display_name":  "Kate Taneyhill",
+        "email":  "katet@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Kate%20Taneyhill.jpg",
+        "identities":  {
+          "+1-206-555-2732":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|081d9d81-2445-430c-b1fe-520ecd3ecf00":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=kate taneyhill":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "katet":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "katet@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "engineering-operations"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Engineering Operations",
+          "manager":  "33d6a6a2-3615-4f0c-aa26-c15016432a24",
+          "title":  "Senior Engineer"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:48:28Z",
+          "updated_at":  "2020-12-23T00:48:28Z"
+        }
+      },
+      {
+        "id":  "0855552e-0a9c-49c9-ab7b-b5b2139d68c7",
+        "enabled":  true,
+        "display_name":  "Mchiel Wories",
+        "email":  "mchielw@acmecorp.com",
+        "picture":  "https://github.com/aserto-demo/contoso-ad-sample/raw/main/UserImages/Mchiel%20Wories.jpg",
+        "identities":  {
+          "+1-206-555-4539":  {
+            "type":  "PHONE",
+            "provider":  "",
+            "verified":  false
+          },
+          "auth0|0855552e-0a9c-49c9-ab7b-b5b2139d68c7":  {
+            "type":  "PID",
+            "provider":  "auth0",
+            "verified":  true
+          },
+          "cn=mchiel wories":  {
+            "type":  "DN",
+            "provider":  "",
+            "verified":  false
+          },
+          "mchielw":  {
+            "type":  "USERNAME",
+            "provider":  "",
+            "verified":  false
+          },
+          "mchielw@acmecorp.com":  {
+            "type":  "EMAIL",
+            "provider":  "",
+            "verified":  true
+          }
+        },
+        "applications":  {
+          "*":  {
+            "attr":  null,
+            "roles":  [
+              "user",
+              "acmecorp",
+              "operations"
+            ],
+            "scopes":  []
+          }
+        },
+        "attr":  {
+          "department":  "Operations",
+          "manager":  "b1bb9fc3-dcb0-4328-8d91-6d88ee78bc2d",
+          "title":  "Procurement Manager"
+        },
+        "metadata":  {
+          "created_at":  "2020-12-23T00:47:23Z",
+          "updated_at":  "2020-12-23T00:47:23Z"
+        }
+      }
+    ],
+    "page":  {
+      "next_token":  "MDk2MTM5MjgtOTkyYy00MzI4LTgwMjQtN2UyMjkxOWVmMmIz",
+      "result_size":  10,
+      "total_size":  272
+    }
+  }
