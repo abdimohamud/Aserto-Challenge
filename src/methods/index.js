@@ -8,9 +8,11 @@ export const fetchUsers = (token) => {
   );
 };
 
-export const fetchNamesId = () => {
+export const fetchNamesId = (token) => {
   return axios.get(
-    "https://onebox.demo.aserto.com/api/v1/dir/users?page.size=10&fields.mask=id,display_name"
+    `https://onebox.demo.aserto.com/api/v1/dir/users?page.size=10&fields.mask=id,display_name&page.token=${
+      token ? token : ""
+    }`
   );
 };
 

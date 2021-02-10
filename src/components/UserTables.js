@@ -4,13 +4,7 @@ import {NavLink } from 'react-router-dom'
 import { fetchUsers, fetchUserById } from "../methods";
 import MoreInfo from "./MoreInfo";
 
-function imagecellRender(data) {
-  return <img src={data} style={{width:'50%', marginLeft:'auto', marginRight:'auto'}} alt={data} />;
-}
 
-function hyperLinkCellRender(id, display_name) {
-  return <NavLink to={`/user/${id}`}>{display_name}</NavLink>
-}
 
 const UsersTable = () => {
   const [token, setToken] = useState("");
@@ -19,16 +13,24 @@ const UsersTable = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [usersData, setUsersData] = useState([]);
   const [user,setUser] = useState({})
+  const[manager, setManager] = useState("")
+  const[managerId, setManagerId] = useState({})  
   
-  
-  
+  // Modal Toggle
   function toggleModal(e) {
     e.preventDefault();
     setIsOpen(!isOpen);
   }
+  // Custom Cell Renders
   function cellRender(id) {
-   
-    return <button onClick={(e)=>{ setId(id); toggleModal(e)}}> &#8505;</button>;
+    return <button type="button" className="btn btn-outline-primary" onClick={(e)=>{ setId(id); toggleModal(e)}}> <i className="fas fa-info-circle"></i></button>;
+  }
+  function imagecellRender(data) {
+    return <img src={data} className="rounded" id="image-cell" alt={data} />;
+  }
+  
+  function hyperLinkCellRender(id, display_name) {
+    return <NavLink to={`/user/${id}`}>{display_name}</NavLink>
   }
 
   useEffect(() => {
@@ -42,7 +44,7 @@ const UsersTable = () => {
               display_name: hyperLinkCellRender(user.id,user.display_name),
               email: user.email,
               picture: imagecellRender(user.picture),
-              info: cellRender(user.id)
+              info: cellRender(user.id),
             };
           })
         );
@@ -51,10 +53,24 @@ const UsersTable = () => {
   }, [token]);
 
   useEffect(() => {
+    if(id){
     fetchUserById(id)
-    .then(res => setUser(res.data.results))
+    .then(res => {
+      setUser(res.data.results)
+      setManagerId(res.data.results.attr.manager)
+    })
     .catch(err =>console.log(err))
-   }, [id])
+  }}, [id])
+
+   useEffect(() => {
+     if(managerId.length){
+    fetchUserById(managerId)
+    .then(res => {
+      setManager(res.data.results)
+    })
+    .catch(err =>console.log(err))
+  }
+   }, [managerId])
 
   const columns = [
     {
@@ -65,19 +81,18 @@ const UsersTable = () => {
     { key: "display_name", name: "Name" },
     { key: "email", name: "Email" },
     {
-      key: "info",
-      name: "Quick Info",
+      key: "info",name: "Quick Info",
      
     }
   ];
 
   return (
     <>
-    <div className="container">
+    <div className="grid-container" >
 
-    {user.id?<MoreInfo isOpen={isOpen} toggleModal={toggleModal} user={user} />:''}
+    {user.id ?<MoreInfo isOpen={isOpen} toggleModal={toggleModal} user={user} manager={manager} />:''}
      {rows.length ? (
-        <div style={{height:'100%',}}>
+        <div>
 
           <ReactDataGrid
             columns={columns}
@@ -86,23 +101,25 @@ const UsersTable = () => {
             rowHeight={160}
             headerRowHeight={30}
             minHeight={800}
+            minWidth={1700}
             />
         </div>
        
        ) : (
-         <div class="spinner-border" id="spinner"  role="status">
-        <span class="sr-only">Loading...</span>
+        <div className="d-flex justify-content-center">
+         <div className="spinner-border" id="spinner"  role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
       </div>
       )}
-       <span style={{ display: "flex", justifyContent: "space-between" }}>
-        <button>Previous</button>
-        <button
-          onClick={() => {
-            setToken(usersData.page.next_token);
-          }}
-          >
-          Next
-        </button>
+       <span >
+       <nav  >
+  <ul className="pagination" id="next-button" >
+    
+
+    <li className="page-item"><button className="page-link" onClick={() => ( setToken(usersData.page['next_token']))}>Next</button></li>
+  </ul>
+</nav>
       </span>
       </div>
     </>
@@ -110,3 +127,4 @@ const UsersTable = () => {
 };
 
 export default UsersTable;
+ 

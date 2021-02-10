@@ -1,9 +1,10 @@
 import React from 'react';
 import Modal from "react-modal";
+import {NavLink} from 'react-router-dom'
 
 
 Modal.setAppElement("#root");
-const MoreInfo = ({ user, toggleModal, isOpen }) => {
+const MoreInfo = ({ user, toggleModal, isOpen, manager }) => {
 
   
   return (
@@ -17,7 +18,7 @@ const MoreInfo = ({ user, toggleModal, isOpen }) => {
         closeTimeoutMS={500}
       >
        {isOpen? <div className="moreinfo-modal">
-          <img src={user.picture} alt={user.id}/>
+          <img src={user.picture} alt={user.id} className="rounded"/>
           <span>
             <h5>Display Name:</h5><p>{user.display_name}</p> 
           </span>
@@ -40,17 +41,14 @@ const MoreInfo = ({ user, toggleModal, isOpen }) => {
           ))
           
           :null}
-          {/* <h5 style={{textAlign:'center'}}>
-          Attributes
+         
 
-          </h5>
+         
           <span>
-            <h5>Last Update:</h5><p>{user.metadata.updated_at}</p> 
+            <h5>Manager:</h5><NavLink to={`/user/${manager.id}`}><p>{manager.display_name}</p> </NavLink>
           </span>
-          <span>
-            <h5>Last Update:</h5><p>{user.metadata.updated_at}</p> 
-          </span> */}
-          <h5 style={{textAlign:'center'}}>
+       
+          <h5 id="title-text">
           MetaData
 
           </h5>

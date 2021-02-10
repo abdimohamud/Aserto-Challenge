@@ -33,3 +33,35 @@
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
+
+.App {
+  text-align: center;
+}
+#next-button {
+  display: flex;
+  justify-content: center;
+}
+.grid-container {
+  margin-top: 4%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+.image-cell {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#td-align {
+  display: flex;
+  justify-content: center;
+}
+
+#th-align {
+  text-align: center;
+}
+
+#title-text {
+  text-align: center;
+}

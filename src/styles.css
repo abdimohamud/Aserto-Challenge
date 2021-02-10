@@ -19,6 +19,7 @@
 
 .myoverlay {
   position: fixed;
+  z-index: 1050;
   top: 0;
   left: 0;
   right: 0;
@@ -57,4 +58,41 @@
 #spinner {
   display: flex;
   align-items: center;
+}
+
+#next-button {
+  display: flex;
+  justify-content: center;
+}
+.grid-container {
+  margin-top: 3%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+
+.nav-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+
+#image-cell {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#td-align {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#th-align {
+  text-align: center;
+}
+
+#title-text {
+  text-align: center;
 }

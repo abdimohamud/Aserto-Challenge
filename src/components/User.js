@@ -1,19 +1,25 @@
 import React, {useState, useEffect} from 'react'
+import {NavLink} from 'react-router-dom'
 import {fetchUserById} from '../methods'
 import {useParams} from 'react-router-dom'
 const User = () => {
     const {id} = useParams()
-    console.log(id)
     const [user,setUser] = useState(null)
+    const[manager, setManager] =useState("")
+    const [errors, setErrors] = useState("")
+
     useEffect(() => {
      fetchUserById(id)
-     .then(res => setUser(res.data.results))
-     .catch(err =>console.log(err))
+     .then(res => {setUser(res.data.results); fetchUserById(res.data.results.attr.manager).then(res=>setManager(res.data.results))})
+     .catch(err =>setErrors(err))
     }, [id])
     return (
         <div className="container">
+          {errors?<div class="alert alert-danger" role="alert">
+          <span>{errors.message}</span>
+</div>:''}
         {user?<div className="moreinfo-modal">
-        <img src={user.picture} alt={id} style={{width:'50%', marginRight:'auto', marginLeft:'auto'}}/>
+        <img src={user.picture} alt={id} className="rounded" style={{width:'50%', marginRight:'auto', marginLeft:'auto'}}/>
         <span>
           <h5>Display Name:</h5><p>{user.display_name}</p> 
         </span>
@@ -37,16 +43,12 @@ const User = () => {
         
         :''}
         <h5 style={{textAlign:'center'}}>
-        {/* Attributes
-
-        </h5>
+      
         <span>
-          <h5>Last Update:</h5><p>{user.metadata.updated_at}</p> 
+        <h5>Manager:</h5><NavLink to={`/user/${manager.id}`}><p>{manager.display_name}</p> </NavLink> 
         </span>
-        <span>
-          <h5>Last Update:</h5><p>{user.metadata.updated_at}</p> 
-        </span>
-        <h5 style={{textAlign:'center'}}> */}
+     
+      
         MetaData
 
         </h5>
@@ -57,9 +59,9 @@ const User = () => {
           <h5>Created:</h5><p>{user.metadata.created_at}</p> 
         </span>
         </div>
-    :<div class="spinner-border" id="spinner"  role="status">
-    <span class="sr-only">Loading...</span>
-  </div>}
+    : <div className="d-flex justify-content-center"><div className="spinner-border" id="spinner"  role="status">
+    <span className="sr-only">Loading...</span>
+  </div></div>}
       </div>
     )
 }
