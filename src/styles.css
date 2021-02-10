@@ -1,3 +1,8 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
 .mymodal {
   position: fixed;
   top: 50%;
@@ -32,4 +37,24 @@
 
 .ReactModal__Overlay--before-close {
   opacity: 0;
+}
+.react-grid-HeaderRow {
+  overflow-x: none;
+}
+
+.moreinfo-modal {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.moreinfo-modal span {
+  display: flex;
+  justify-content: space-between;
+}
+#spinner {
+  display: flex;
+  align-items: center;
 }
