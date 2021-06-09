@@ -1,5 +1,5 @@
 import axios from "axios";
-
+axios.defaults.headers.post['Content-Type'] ='application/x-www-form-urlencoded';
 export const fetchUsers = (token) => {
   return axios.get(
     `https://onebox.demo.aserto.com/api/v1/dir/users?page.size=10&page.token=${
